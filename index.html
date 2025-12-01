@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Online Registration Form</h2>
+    <form action="submit.php" method="POST" id="regForm">
+
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender</label>
+        <select name="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <!-- ✅ Added CSE Course Fields -->
+        <label>Course (Department)</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option value="CSE">CSE - Computer Science Engineering</option>
+            <option value="AIML">CSE - AI & ML</option>
+            <option value="DS">CSE - Data Science</option>
+            <option value="IOT">CSE - IoT & Cyber Security</option>
+        </select>
+
+        <label>Year</label>
+        <select name="year" required>
+            <option value="">Select Year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+
+        <label>Section</label>
+        <select name="section" required>
+            <option value="">Select Section</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <label>Semester</label>
+        <select name="Semester" required>
+            <option value="">Select Semester</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+        </select>
+        <!-- End CSE Fields -->
+
+        <label>Address</label>
+        <textarea name="address" required></textarea>
+
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+</div>
+</body>
+</html>
